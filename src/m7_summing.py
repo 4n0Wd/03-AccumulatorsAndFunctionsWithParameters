@@ -88,6 +88,14 @@ def run_test_sum_square_roots():
     print('TEST 1 EXPECTED:', expected)
     print('TEST 1 CALCULATED:', sum_square_roots(5))
 
+    expected = 1.41421
+    print('TEST 1 EXPECTED:', expected)
+    print('TEST 1 CALCULATED:', sum_square_roots(1))
+
+    expected = 3.41421
+    print('TEST 1 EXPECTED:', expected)
+    print('TEST 1 CALCULATED:', sum_square_roots(2))
+
 def sum_square_roots(n):
     """
     What comes in:  A non-negative integer n.
@@ -106,7 +114,7 @@ def sum_square_roots(n):
         total = total + math.sqrt(2 * k)
     return total
     # ------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #   That is called TEST-DRIVEN DEVELOPMENT (TDD).
     #
