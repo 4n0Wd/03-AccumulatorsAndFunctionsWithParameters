@@ -34,14 +34,14 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Mark Hays, Amanda Stouder,
 #
 #          -- Write the names of two types of graphics objects that
 #             you can construct OTHER than Circle and Point:
-#                Square, Regular polygon
+#                Square, Polygon
 #
 #          -- Write the names of three METHODs that Circle objects have:
-#                attach_to, fill_color
+#                attach_to, fill_color, clone
 #
 #          -- Write the names of three INSTANCE VARIABLEs that Circle
 #             objects have:
-#                center_point, radius
+#                center_point, radius, outline_thickness
 #
 #     f. What does a RoseWindow RENDER method do?
 #            To draw all the objects attached to this window.
