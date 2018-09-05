@@ -4,8 +4,9 @@ in its simplest classic forms:
    SUMMING:       total = total + number
 
 Authors: David Mutchler, Dave Fisher, Vibha Alangar, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Henry.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
+import math
 
 
 def main():
@@ -17,7 +18,7 @@ def main():
 def run_test_sum_cosines():
     """ Tests the   sum_cosines   function. """
     # ------------------------------------------------------------------
-    # TODO: 2. Implement this function.
+    # DONE: 2. Implement this function.
     #   It TESTS the  sum_cosines  function defined below.
     #   Include at least **   3   ** tests.
     #
@@ -28,6 +29,18 @@ def run_test_sum_cosines():
     print('--------------------------------------------------')
     print('Testing the   sum_cosines   function:')
     print('--------------------------------------------------')
+
+    expected = 0.13416
+    print('TEST 1 EXPECTED:', expected)
+    print('TEST 1 CALCULATED:', sum_cosines(3))
+
+    expected = 1
+    print('TEST 2 EXPECTED:', expected)
+    print('TEST 2 CALCULATED:', sum_cosines(0))
+
+    expected = 1.54030
+    print('TEST 3 EXPECTED:', expected)
+    print('TEST 3 CALCULATED:', sum_cosines(1))
 
 
 def sum_cosines(n):
@@ -40,8 +53,14 @@ def sum_cosines(n):
       If n is 3, this function returns
         cos(0) + cos(1) + cos(2) + cos(3)   which is about 0.13416.
     """
+    total = 0
+    for k in range(n + 1):
+        total = total + math.cos(k)
+
+    return total
+
     # ------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #   That is called TEST-DRIVEN DEVELOPMENT (TDD).
     #
